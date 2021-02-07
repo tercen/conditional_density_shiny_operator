@@ -1,28 +1,19 @@
-# Template Shiny operator for Tercen
+# Conditional density operator
 
 ##### Description
 
-The `Template Shiny operator` is a template repository for the creation of Shiny operators in Tercen.
+This operator represents the conditional density of a binary outcome as a function of a continuous variable.
 
 ##### Usage
 
 Input projection|.
 ---|---
-`x-axis`        | type, description 
-`y-axis`        | type, description 
-`row`           | type, description 
-`column`        | type, description 
-`colors`        | type, description 
-`labels`        | type, description 
+`y-axis`        | numeric, input data 
+`row`           | factor (optional), variables of interest
+`column`        | factor (optional), variables of interest
+`colors`        | factor, binary outcome
 
 Output relations|.
 ---|---
 `Operator view`        | view of the Shiny application
 
-##### Details
-
-Details on the computation.
-
-##### See Also
-
-[template_R_operator](https://github.com/tercen/template_R_operator)

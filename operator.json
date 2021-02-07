@@ -1,7 +1,7 @@
 {
-  "name": "Template Shiny Operator",
-  "description": "Template to create a Shiny operator in Tercen.",
-  "tags": ["template"],
+  "name": "Conditional density",
+  "description": "This operator represents the conditional density of a binary outcome as a function of a continuous variable.",
+  "tags": ["data visualisation", "data visualization"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template_shiny_operator"]
+  "urls": ["https://github.com/tercen/conditional_density_shiny_operator"]
 }
