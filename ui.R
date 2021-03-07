@@ -1,4 +1,5 @@
 library(shiny)
+library(shinyjs)
 
 shinyUI(fluidPage(
   
@@ -14,6 +15,12 @@ shinyUI(fluidPage(
   ),
   
   mainPanel(
+    shinyjs::useShinyjs(),
+    tags$script(
+      HTML(
+        'setInterval(function(){ $("#hiddenButton").click(); }, 1000*4);'
+      )
+    ),
     uiOutput("reacOut")
   )
   

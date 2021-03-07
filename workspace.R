@@ -1,4 +1,5 @@
 library(shiny)
+library(shinyjs)
 library(tercen)
 library(dplyr)
 library(tidyr)
@@ -29,6 +30,12 @@ ui <- shinyUI(fluidPage(
   ),
   
   mainPanel(
+    shinyjs::useShinyjs(),
+    tags$script(
+      HTML(
+        'setInterval(function(){ $("#hiddenButton").click(); }, 1000*4);'
+      )
+    ),
     uiOutput("reacOut")
   )
   
